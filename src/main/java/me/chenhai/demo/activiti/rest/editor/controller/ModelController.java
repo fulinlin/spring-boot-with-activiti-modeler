@@ -156,6 +156,19 @@ public class ModelController {
 
         return success();
     }
+    /**
+     * 启动一个流程实例
+     *
+     * @param id
+     * @return
+     * @throws Exception
+     */
+    @ApiOperation(value = "启动一个流程实例")
+    @PostMapping("{id}/start")
+    public Object start(@PathVariable("id") String id) throws Exception {
+
+        return success();
+    }
 
     @ApiOperation(value = "上传一个已有模型")
     @RequestMapping(value = "/uploadFile", method = RequestMethod.POST)
